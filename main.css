@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Chonburi|Montserrat');
+
+/*font-family: 'Chonburi', cursive;
+*/
+
+body {
+    background: url("images/bricks.jpg") no-repeat center center fixed;
+    background-size: cover;
+}
+
+h1 {
+    text-align: left;
+}
+
+p {
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+}
+
+a { 
+    text-decoration: none;
+}
+
+/********** CONTENT CONTAINER **********/
+.white {
+    background-color: #fff;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 3%;
+    padding-bottom: 50%;
+    border-radius: 4px;
+    text-align: center;
+    background: url("images/newspaper.jpg");
+    background-size: cover;
+}
+
+/********** HEADER LOGO **********/
+.logo {
+    height: 180px;
+    width: auto;
+    margin-top: 10%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/********** FLEX BOX **********/
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/********** FOOTER **********/
+.bottom {
+    color: white;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-weight: 800;
+}
+
+/********** BACK TO TOP BUTTON **********/
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 5%; /* Place the button at the bottom of the page */
+    right: 7%; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 8px; /* Some padding */
+    background-color: transparent;
+}
+
+#myBtn:hover {
+    background-color: lightgrey;/* Add a dark-grey background on hover */
+    border-radius: 4px;
+}
+
+/********** Dropdown Button **********/
+.dropbtn {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    color: #191818; 
+    font-size: 1.4em;
+    transition: 0.4s;
+    padding: 0 26px;
+    text-align: center;
+    width: 7.1em;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 1%;  
+    text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    text-align: center;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 0px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd; text-align: center;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block; background-color: white; text-align: center;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #fff; color: #958326; padding: 18px 26px; border-radius: 4px; text-align: center;}
+
+/********** GOOGLE MAP **********/
+.mapouter {
+    text-align: right;
+    width: 60%;
+    height: 500px;
+    margin: auto;
+    border: 5px solid white;
+}
+
+.gmap_canvas {
+    overflow:hidden;
+    background:none!important;
+    width: 100%;
+    height: 500px;
+}
